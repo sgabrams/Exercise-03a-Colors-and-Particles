@@ -26,4 +26,3 @@ func start_bricks():
 			brick.row = h
 			brick.col = w
 			add_child(brick)
-

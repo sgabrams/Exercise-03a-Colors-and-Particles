@@ -7,7 +7,7 @@ func _ready():
 	update_color()
 
 
-func update_color():
+func update_color(): 
 	if HUD.color_background:
 		pass
 	else:

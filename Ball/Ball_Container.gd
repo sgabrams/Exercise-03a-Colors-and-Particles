@@ -13,3 +13,4 @@ func start_ball():
 	ball.name = "Ball"
 	ball.apply_central_impulse(Vector2(250,-250))
 	add_child(ball)
+

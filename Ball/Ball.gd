@@ -13,9 +13,9 @@ func _ready():
 
 func update_color():
 	if HUD.color_ball:
-		pass
+		$Color.color = Color8(34,184,207)
 	else:
-		pass
+		$Color.color = Color(1,1,1,1)
 
 
 
@@ -37,4 +37,4 @@ func _integrate_forces(state):
 	if abs(state.linear_velocity.y) < min_speed:
 		state.linear_velocity.y = sign(state.linear_velocity.y) * min_speed
 	if state.linear_velocity.length() > max_speed:
-		state.linear_velocity = state.linear_velocity.normalized() * max_speed
+		state.linear_velocity = state.linear_velocity.normalized() * max_speed 
